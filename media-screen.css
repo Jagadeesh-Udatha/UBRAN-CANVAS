@@ -1,0 +1,610 @@
+
+
+
+@media screen and (max-width: 480px) {
+  body , .whole-main-page{
+    overflow-x: hidden;
+  }
+  .collection-name {
+    backdrop-filter: blur(0px);
+  }
+
+  header {
+    border-radius : 10px;
+    top:0;
+    height: 150px;
+    width: 100%;
+  }
+
+  .right-header {
+    display: none;
+  }
+
+ 
+
+  nav {
+    flex-direction: column;
+  }
+
+  .right-header-shape {
+    display: flex;
+    background-color: #f1f1f18a;
+    gap: 30px;
+  }
+
+  .mobile-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    margin-right: 20px;
+  }
+
+
+
+
+
+  .main-logo {
+    height: 70px;
+  }
+
+  .logo-name {
+    font-size: 15px;
+    margin-left: -20px;
+  }
+
+
+
+  .images-scroll {
+    width: 1920px;
+  }
+
+  .mens-wear img, .womens-wear img, .shoes img, .accessories img, .kids-wear img{
+    height: 240px;
+    width: 380px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: transform .3s ease-in-out;
+  }
+
+  .collections {
+    display: flex;
+    gap: 50px;
+  }
+
+  .collections > div img {
+    height: 200px;
+    width: auto;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+
+ 
+    
+
+  .collection-name {
+    margin-top: -55px;
+    font-size: 15px;
+    width: auto;
+    padding: 0 23px;
+    text-align: center;
+    border-radius: 20px;
+    color:white;
+
+  }
+
+  .foot-wear-collection p {
+    margin-left: 17px;
+  }
+   
+  .footer {
+    padding: 40px 10px;
+  }
+
+  .phone-email {
+    margin-left: 40px;
+  }
+
+ .maps-icon {
+  flex-direction: column;
+  gap: 5px;
+
+ }
+
+  .maps-icon {
+    gap:5px;
+  }
+
+  .all-footer  {
+    gap: 5px;
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  li {
+    line-height: 1.5;
+  }
+
+  .social-media ul{
+    gap: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+
+  }
+
+  .social-media-data img {
+    height: 30px;
+  }
+
+  .end-footer {
+    flex-direction: column;
+    gap: 10px;
+    margin-left: 40px;
+  }
+
+  .all-latest-button {
+    margin: 5px 0 0 100px;
+  }
+
+  .images-section {
+    flex-direction: column;
+    
+  }
+
+
+  .all-side-images {
+    flex-direction: row;
+    gap: 10px;
+    overflow-x: auto; /* Add this line to enable horizontal scrolling */
+    
+  }
+
+  .side-images img {
+    height: 70px;
+    width: auto; 
+  }
+
+  .main-image img {
+    height: auto;
+    width: 380px;
+  }
+
+  h1 {
+    text-align: center;
+  }
+  .after-product-info p {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .after-product-ratings {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .new-cost-discount {
+    justify-content: center;
+  }
+
+  .newCost-diff {
+    font-size: 30px;
+  }
+
+  .old-cost-discount {
+    text-align: center;
+  }
+  .size-chart {
+    margin-top: -10px;
+  }
+
+  .del-option-details {
+    justify-content: center;
+  }
+
+  
+
+  .check-enter input {
+    width: 250px;
+    margin-left: 30px;
+  }
+  .valid{
+    margin-left: 30px;
+  }
+
+  .whole-cart {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+
+  
+
+  .cart-product {
+    width: auto;
+    flex-direction: column;
+    padding: 40px 50px;
+    justify-content: center;
+    gap: 5px;
+  }
+
+  .cart-product-data {
+    /* justify-content: center; */
+    text-align: center;
+  }
+
+   
+  .cart-image img {
+    width: 200px;
+    height: auto;
+  }
+
+  .cart-image , .cart-timer, .discount-cart-new{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .cart-timer {
+    display: flex;
+    justify-content: center;
+  }
+
+  .remove-product {
+    margin:0px;
+  }
+  .mrp-cost , .discount-mrp, .extra-Fee, .shipping-fee , .total-amount {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    
+  }
+
+  
+
+  .price-amount {
+    height: 400px;
+    width: 250px;
+  }
+  
+
+
+}
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 480px) and
+    (max-device-width: 780px)  {
+      .collection-name {
+        backdrop-filter: blur(0px);
+      }
+      header {
+        border-radius : 10px;
+        top:0;
+        height: 100px;
+      }
+      .outer-left-header {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row-reverse;
+        gap: 20px;
+      }
+
+      .main-header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        place-items: center;
+      }
+
+      /* .mobile-menu {
+        display: none;
+      } */
+
+      .mobile-menu {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 15px;
+          margin-right: 20px;
+        }
+      
+      
+      .right-header {
+        display: none;
+    
+      }
+
+      .add-to-cart {
+        margin-top:-10px;
+      }
+    
+      nav {
+        flex-direction: column;
+      }
+    
+      .right-header-shape {
+        display: flex;
+        background-color: #f1f1f18a;
+        gap: 20px;
+      }
+    
+      
+      .main-logo {
+        height: 90px;
+      }
+    
+      .logo-name {
+        font-size: 15px;
+        margin-left: -20px;
+      }
+      .images-scroll {
+        width: 3000px;
+      }
+    
+      .mens-wear img, .womens-wear img, .shoes img, .accessories img, .kids-wear img{
+        height: 280px;
+        width: 560px;
+        border-radius: 30px;
+        cursor: pointer;
+        transition: transform .3s ease-in-out;
+      }
+
+      .collections {
+        display: flex;
+        gap: 50px;
+      }
+    
+      .collections > div img {
+        height: 200px;
+        width: auto;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+      }
+      .collection-name {
+        margin-top: -55px;
+        font-size: 15px;
+        width: auto;
+        padding: 0 23px;
+        text-align: center;
+        border-radius: 20px;
+        color:white;
+    
+      }
+
+      .images-section {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+    
+      .all-side-images {
+        flex-direction: row;
+        gap: 10px;
+        overflow-x: auto; /* Add this line to enable horizontal scrolling */
+        
+      }
+    
+      .side-images img {
+        height: 90px;
+        width: auto; 
+      }
+    
+      .main-image img {
+        height: 350px;
+      }
+    
+      h1 {
+        text-align: center;
+      }
+      .after-product-info p {
+        font-size: 20px;
+        text-align: center;
+      }
+    
+      .after-product-ratings {
+        justify-content: center;
+        align-items: center;
+      }
+    
+      .new-cost-discount {
+        justify-content: center;
+      }
+    
+      .newCost-diff {
+        font-size: 30px;
+      }
+    
+      .old-cost-discount {
+        text-align: center;
+      }
+      .size-chart {
+        margin-top: -10px;
+      }
+    
+      .del-option-details {
+        justify-content: center;
+      }
+    
+      
+    
+      .check-enter input {
+        width: 250px;
+        margin-left: 30px;
+      }
+      .valid{
+        margin-left: 30px;
+      }
+
+      .whole-cart {
+        flex-direction: column;
+      }
+
+      .cart-product {
+        width: 650px;
+      }
+
+      .cart-image img {
+        width: 250px;
+        height: auto;
+      }
+
+      
+    
+    }
+
+
+    @media screen and (min-device-width: 780px) 
+    and (max-device-width: 1024px) {
+      .collection-name {
+        backdrop-filter: blur(0px);
+      }
+      header {
+        border-radius : 10px;
+        top:0;
+        height: 100px;
+      }
+      .outer-left-header {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row-reverse;
+        gap: 20px;
+      }
+
+      .main-header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        place-items: center;
+      }
+
+      /* .mobile-menu {
+        display: none;
+      } */
+
+      .mobile-menu {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 15px;
+          margin-right: 20px;
+        }
+      
+      
+      .right-header {
+        display: none;
+    
+      }
+
+      .add-to-cart {
+        margin-top:-10px;
+      }
+    
+      nav {
+        flex-direction: column;
+      }
+    
+      .right-header-shape {
+        display: flex;
+        background-color: #f1f1f18a;
+        gap: 20px;
+      }
+
+      .images-scroll {
+        width:3900px;
+      }
+
+      .mens-wear img, .womens-wear img, .shoes img, .accessories img, .kids-wear img{
+        height: 400px;
+        width: 750px;
+        border-radius: 30px;
+        cursor: pointer;
+        transition: transform .3s ease-in-out;
+      }
+
+      
+  .images-section {
+    height: auto;
+  }
+
+  .all-side-images {
+    gap: 10px;
+    overflow-x: auto; /* Add this line to enable horizontal scrolling */
+    
+  }
+
+  .side-images img {
+    height: 50px;
+    width: auto; 
+  }
+
+  .main-image img {
+    height: 350px;
+  }
+
+  .main-image {
+    height: 400px;
+  }
+
+  h1 {
+    text-align: center;
+  }
+  .after-product-info p {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .after-product-ratings {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .new-cost-discount {
+    justify-content: center;
+  }
+
+  .newCost-diff {
+    font-size: 30px;
+  }
+
+  .old-cost-discount {
+    text-align: center;
+  }
+  .size-chart {
+    margin-top: -10px;
+  }
+
+  .del-option-details {
+    justify-content: center;
+  }
+
+  
+
+  .check-enter input {
+    width: 250px;
+    margin-left: 30px;
+  }
+  .valid{
+    margin-left: 30px;
+  }
+
+  .whole-cart {
+    flex-direction: column;
+  }
+
+}

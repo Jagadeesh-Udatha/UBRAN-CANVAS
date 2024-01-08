@@ -1,0 +1,103 @@
+body {
+  height: 2000px;
+}
+  html {
+    scroll-behavior: smooth;
+  }
+
+
+.whole-main-page {
+  overflow-x: hidden;
+}
+
+
+
+
+.images-scroll {
+  display: flex;
+  width: 8000px;
+  padding-top: 100px;
+}
+
+
+.mens-wear, .womens-wear, .shoes, .accessories, .kids-wear {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  place-items: center;
+}
+
+.mens-wear img, .womens-wear img, .shoes img, .accessories img, .kids-wear img{
+  height: 500px;
+  width: 1000px;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: transform .3s ease-in-out;
+}
+
+.images-scroll >  div img:hover {
+  transform: scale(1.1);
+}
+
+.collections {
+  display: flex;
+  gap: 120px;
+  width: auto;
+  justify-content: center;
+  flex-wrap: wrap;
+  overflow: hidden;
+}
+
+
+
+.collections > div img{
+  height: 500px;
+  width: 350px; 
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.collections > div {
+  cursor: pointer;
+}
+.collection-name {
+  backdrop-filter: blur(5px);
+  margin-top: -82px;
+  font-size: 25px;
+  text-align: center;
+  color: white;
+  overflow: hidden;
+}
+
+h1 {
+  margin-top: 100px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+
+.about-section {
+  margin-top: 40px;
+  padding: 20px;
+  background-color: #f8f8f8;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.about-section h2 {
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.about-section p {
+  color: #666;
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: center;
+
+}
+
+
+

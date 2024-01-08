@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+  <title>Outfit-look</title>
+  <link rel = "stylesheet" href = "header.css">
+  <link rel = "stylesheet" href = "casual-outfit-look.css">
+  <link rel="stylesheet" href = "footer.css">
+  <link rel = "stylesheet" href = "media-screen.css">
+
+</head>
+<body>
+  <div  class="header-div" id = "header-div-id">
+    <header>
+      <nav class="main-header">
+        <div class="outer-left-header">
+          <div class="left-header">
+            <a href = "index.html">
+              <img class="main-logo" src = "images/UrbanCanvasLogo.png" alt = "Fashion-Logo">
+            </a>
+            <p class="logo-name">
+              URBAN CANVAS
+            </p>
+          </div>
+          <div class="mobile-menu">
+            <div class="add-to-cart">
+              <div class="cart-value-div">
+                <p class="cart-value"> 0 </p>
+              </div>
+              <a href = "cart.html"><img class="add-to-cart-img" src="images/AddToCart.png" alt = "Cart"></a>
+  
+            </div>
+          </div>
+        </div>
+        
+        <div class="results-bar">
+            <input type = "text" placeholder="Search For Products & more" class="search-input">
+            <img onclick = "searchItems();" src = "images/icons/icons8-search-64.png">
+          
+        </div>
+        <div class="right-header">
+          <li onclick = "goToHomePage();">HOME</li>
+          <li onclick = "redirectToCollections()">COLLECTIONS</li>
+          <li onclick = "scrollToSection('contact-page');">CONTACT</li>
+          
+          <div class="add-to-cart" >
+            <div class="cart-value-div">
+              <p class="cart-value"> 0 </p>
+            </div>
+            <a href = "cart.html"><img class="add-to-cart-img" src="images/AddToCart.png" alt = "Cart"></a>
+
+          </div>
+        </div>
+  
+      </nav>
+    </header>
+  </div>
+  <div class="images-section">
+    <div class="all-side-images" id = "all-side-images-id">
+
+    </div>
+    <div class="main-image" id="main-image-change">
+      <img id="selectedProductImage" src="">
+    </div>
+    <div class="only-image-show">
+      <div class="after-product-info" id="after-product-info-id">
+  
+      </div>
+      <div class="after-product-ratings" id="after-product-ratings-id">
+    
+      </div>
+      <div class="discount-cost-two" id="discount-cost-two-id">
+        
+      </div>
+      <div class="size-chart">
+        <p>Size: </p>
+        <ul>
+          <li>S</li>
+          <li>M</li>
+          <li>L</li>
+          <li>XL</li>
+          <li>XXL</li>
+        </ul>
+      </div>
+      <p class="tell-something-offer" id="tell-something">
+
+      </p>
+
+      <div class="add-buy">
+        <button onclick = "changeAdded();" class="add-to-cart-button">
+          Add to Cart
+        </button>
+      </div>
+      
+      <div class="check-delivery">
+        <div class="del-option-details">
+          <label for = "pincode"> Delivery Options  </label>
+          <img class="delivery-truck" src = "images/icons8-delivery-truck.gif">
+        </div>
+       
+        <div class="check-enter">
+          <input class="entered-pin" type = "text" id="pincode" placeholder="Enter pincode">
+          <button onclick="validatePincode();">Check</button>
+        </div>
+        <div class="valid">
+        </div>
+        
+        
+      </div>
+    </div>
+    
+    
+  
+  </div>
+  <footer id="contact-page">
+    <section class="contact-section">
+      
+      <div class="all-footer">
+        <div class="phone-email">
+          <p> Call: +91 7386086639</p>
+          <div class="maps-icon">
+            <a href = "https://www.google.com/maps/place/VPR+Convention+Centre/@14.3868989,79.9752205,15z/data=!4m6!3m5!1s0x3a4cf3afc59ce0b1:0xd9302344cf956f59!8m2!3d14.3877938!4d79.9732563!16s%2Fg%2F1q62fb8f_?entry=ttu">          <img src = "images/icons/icons8-place-marker-48.png">
+            </a>
+            <p> Near VPR Convention Center, Nellore</p>
+          </div>
+          <p> Support : jagadeeshraja055@gmail.com</p>
+        </div>
+
+        <div class="customer-care">
+          <ul> <p>Customer Care</p>
+            <li>Contact us</li>
+            <li>Returns & Exchanges</li>
+            <li>Terms of Service</li>
+            <li>Privacy Policy</li>
+          </ul>
+        </div>
+
+        <div class="inside-urban-canvas">
+          <ul> <p>Inside Urban Canvas</p>
+            <li>About Us</li>
+            <li>Why Urban Canvas</li>
+          </ul>
+        </div>
+
+        <div class="top-searches">
+          <ul> <p>Top Searches</p>
+            <li>Black</li>
+            <li>Sneakers</li>
+            <li>Watches</li>
+            <li>Shipping</li>
+          </ul>
+        </div>
+
+        <div class="social-media">
+          <ul> <p> Social Media </p>
+          <li>
+            <div class="social-media-data">
+             <a href = "https://www.instagram.com/jagadeesh_raja_/">
+              <img src = "images/icons/icons8-instagram-48.png">
+             </a>
+            </div>
+          </li>
+          <li>
+            <div class="social-media-data">
+              <a href ="https://github.com/Jagadeesh-Udatha?tab=repositories">
+                <img src = "images/icons/icons8-github-64.png">
+              </a>
+            </div>
+          </li>
+          <li>
+            <div class="social-media-data">
+              <a href  = "https://www.linkedin.com/in/jagadeesh-udatha-109935244/">
+                <img src = "images/icons/icons8-linkedin-48.png">
+              </a>
+            </div>
+          </li>
+        </ul>  
+        </div>
+      </div>
+
+      <div class="end-footer">
+        <div class="rights">
+          <p>@2024, URBAN CANVAS, Inc <span> All Rights Reserved.</span></p>
+        </div>
+        <div class="get-latest-info">
+          <label for="text" > Get Latest Updates </label>
+          <div clas="all-latest">
+            <input type = 'text' id = "text" placeholder="Type Your Email Here">
+            <button class="all-latest-button">
+              SUBSCRIBE
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </footer>
+  
+  
+  <script src  = "search-items.js"></script>
+  
+  <script>
+    
+    function getParameter(parameterName) {
+      const urlParams = new URLSearchParams(window.location.search);
+      return urlParams.get(parameterName);
+    }
+
+    const selectedProductBrand = getParameter('brand');
+    const selectedProductInfo = getParameter('name');
+    const selectedProductRatingStars = getParameter('stars');
+    const selectedProductRatingCount = getParameter('count');
+    const newCost = getParameter('new');
+    const oldCost = getParameter('old');
+    const discount = getParameter('discount');
+    const selectedProductImage = getParameter('image');
+    // Function to retrieve or initialize the cart items from localStorage
+    function getCartItems() {
+      return JSON.parse(localStorage.getItem('cartItems')) || [];
+    }
+
+    // Function to update the cart items in localStorage
+    function updateCartItems(cartItems) {
+      localStorage.setItem('cartItems', JSON.stringify(cartItems));
+    }
+
+    // Function to handle adding a product to the cart
+    
+
+
+    if (newCost < 500 && discount > 50) {
+      document.getElementById("tell-something").textContent = "Great Deal! Don't Miss Out!";
+    } else if (newCost >= 500 && newCost < 1000 && discount > 50) {
+      document.getElementById("tell-something").textContent = "Limited Time Offer! Grab it Now!";
+    } else {
+      document.getElementById("tell-something").textContent = "Explore More Deals in Our Collection!";
+    }
+
+    document.getElementById("after-product-info-id").innerHTML =   `
+    <h1> ${selectedProductBrand} </h1>
+    <p> ${selectedProductInfo}</p>
+    `;
+
+    document.getElementById("after-product-ratings-id").innerHTML = 
+      `
+      <img src = "images/ratings/rating-${selectedProductRatingStars *10}.png"> 
+      <p> ${selectedProductRatingCount} <span>ratings</span></p>
+      `;
+
+    document.getElementById('discount-cost-two-id').innerHTML = 
+      `
+      <div class="new-cost-discount">
+        <p class="discount-diff"> ${discount}% off</p>
+        <p class="newCost-diff"> &#8377 ${newCost}</p>
+      </div>
+        <p class="old-cost-discount"> M. R. P: &#8377 ${oldCost}</p>
+    
+      `;
+    
+
+    
+    var imageSourcePoint = "images/" + selectedProductImage +"1.jpg"
+    document.getElementById('selectedProductImage').src = imageSourcePoint;
+    let sideImagesChange = document.getElementById("all-side-images-id");
+    sideImagesChange.innerHTML = 
+      `
+      <div class="side-images" > <img onclick="changePhoto('1')" src = "images/${selectedProductImage}1.jpg"></div>
+      <div class="side-images" > <img onclick="changePhoto('2')" src = "images/${selectedProductImage}2.jpg"></div>
+      <div class="side-images" > <img onclick="changePhoto('3')" src = "images/${selectedProductImage}3.jpg"></div>
+      <div class="side-images" > <img onclick="changePhoto('4')" src = "images/${selectedProductImage}4.jpg"></div>
+      <div class="side-images" > <img onclick="changePhoto('5')" src = "images/${selectedProductImage}5.jpg"></div>
+      `;
+
+    var changePhotos = document.getElementById("main-image-change");
+    function changePhoto(photoNumber) {
+      changePhotos.innerHTML =   
+      `
+        <img src = "images/${selectedProductImage}${photoNumber}.jpg">`;
+    }
+
+
+
+    function changeAdded() {
+      var changeAddToBuy = document.querySelector(".add-to-cart-button");
+      changeAddToBuy.classList.add("buy-now-button");
+      changeAddToBuy.classList.remove('add-to-cart-button');
+      changeAddToBuy.innerHTML = "Buy Now";
+
+      const cartItems = getCartItems();
+      const newItem = {
+        brand: selectedProductBrand,
+        name: selectedProductInfo,
+        stars: selectedProductRatingStars,
+        count: selectedProductRatingCount,
+        newCost: newCost,
+        oldCost: oldCost,
+        discount: discount,
+        image: selectedProductImage,
+      };
+
+      // Check if the item is already in the cart
+      const existingItemIndex = cartItems.findIndex(item => item.name === newItem.name);
+
+      if (existingItemIndex !== -1) {
+        // If the item is already in the cart, update its quantity or other details
+        cartItems[existingItemIndex] = newItem;
+      } else {
+        // If the item is not in the cart, add it
+        cartItems.push(newItem);
+      }
+
+      // Update the cart items in localStorage
+      updateCartItems(cartItems);
+
+      // Redirect to the new HTML page
+      window.location.href = 'cart.html';
+    }
+
+
+
+    
+
+    function validatePincode() {
+      const enteredPincode = document.querySelector(".entered-pin").value;
+      const validOrNot = document.querySelector(".valid");
+      if(enteredPincode.length  < 6) {
+        validOrNot.classList.remove('yes-valid');
+        validOrNot.classList.add('not-valid');
+        validOrNot.innerHTML = "Please Enter Valid Pincode";
+      } else if(enteredPincode > 524000 && enteredPincode < 524009 || enteredPincode > 560068 && enteredPincode < 560200) {
+        validOrNot.classList.add('yes-valid');
+        validOrNot.classList.remove('not-valid');
+        validOrNot.innerHTML = "Delivery is Available";
+      } else {
+        validOrNot.classList.remove('yes-valid');
+        validOrNot.classList.add('not-valid');
+        validOrNot.innerHTML = "Sorry, Currently no delivery available";
+
+      }
+    }
+
+    const enteredPincode = document.querySelector(".entered-pin");
+    enteredPincode.addEventListener("keydown" ,(event) => {
+      if(event.key === "Enter") {
+        validatePincode();
+      }
+    })
+
+    function goToHomePage() {
+      window.location.href = "index.html";
+    }
+
+    function redirectToCollections() {
+      window.location.href = "index.html#collections-page";
+    }
+
+    function scrollToSection(sectionId) {
+      var targetElement = document.getElementById("contact-page");
+      targetElement.scrollIntoView({behavior:"smooth"});
+    }
+
+    function getCartLength() {
+      const cartLength = JSON.parse(localStorage.getItem('cartLength')) || 0;
+      return cartLength;
+    }
+    document.addEventListener('DOMContentLoaded', function() {
+        const cartValueElements = document.querySelectorAll(".cart-value");
+        cartValueElements.forEach((cartValueElement) => {
+        cartValueElement.textContent = getCartLength();
+      });
+    })
+
+    var keyPressEnterRow = document.querySelector(".search-input");
+    keyPressEnterRow.addEventListener(("keydown"), function(event) {
+      if(event.key === "Enter") {
+        searchItems();
+      }
+    })
+  </script>
+</body>
+</html>

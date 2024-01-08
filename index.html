@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+  <title>Urban Canvas</title>
+  <link rel = "stylesheet" href = "header.css">
+  <link rel = "stylesheet" href = "index.css">
+  <link rel = "stylesheet" href = "media-screen.css">
+  <link rel="stylesheet" href = "footer.css">
+</head>
+<body>
+  <div  class="header-div" id = "header-div-id">
+    <header>
+      <nav class="main-header">
+        <div class="outer-left-header">
+          <div class="left-header">
+            <a href = "index.html">
+              <img class="main-logo" src = "images/UrbanCanvasLogo.png" alt = "Fashion-Logo">
+            </a>
+            <p class="logo-name">
+              URBAN CANVAS
+            </p>
+          </div>
+          <div class="mobile-menu">
+            <div class="add-to-cart">
+              <div class="cart-value-div">
+                <p class="cart-value"> 0 </p>
+              </div>
+              <a href = "cart.html">
+                <img class="add-to-cart-img" src="images/AddToCart.png" alt = "Cart">
+              </a>
+            </div>
+        </div>
+      </div>
+          
+        
+      <div class="results-bar">
+          <input type = "text" placeholder="Search For Products & more" class="search-input">
+          <img onclick = "searchItems();" src = "images/icons/icons8-search-64.png">
+        
+      </div>
+      <div class="right-header">
+        <li onclick = "scrollToSection('collections-page');">COLLECTIONS</li>
+        <li onclick = "scrollToSection('about-page')">CONTACT</li>
+        <li>MY ACCOUNT</li>
+        
+        <div class="add-to-cart" >
+          <div class="cart-value-div">
+            <p class="cart-value">  </p>
+          </div>
+          <a href = "cart.html"><img class="add-to-cart-img" src="images/AddToCart.png" alt = "Cart"></a>
+
+        </div>
+      </div>
+  
+      </nav>
+    </header>
+  </div>
+  
+  
+  
+  <div class="whole-main-page" id="whole-page">
+    
+    <main>
+      <div class="images-scroll">
+        <div class="mens-wear">
+            <a href = "mens-casuals.html">
+              <img  onmouseover="stopScroll()" onmouseleave="startScroll()" src="images/Mens-wear.png" alt = "mens-wear-promotion">
+            </a>
+        </div>
+        <div class="womens-wear">
+          <a href = "ladies-collection.html">
+            <img onmouseover="stopScroll()" onmouseleave="startScroll()"  src = "images/ladies-wear.gif" alt = "ladies-wear-promotion">
+          </a>
+        </div>
+        <div class="shoes">
+          <a href = "shoe-collection.html">
+            <img onmouseover="stopScroll()" onmouseleave="startScroll()"  src ="images/foot-wear.png" alt = "foot-wear-promotion">
+          </a>
+        </div>
+
+        <div class="accessories">
+          <a href = "accessories-collection.html">
+            <img onmouseover="stopScroll()" onmouseleave="startScroll()"  src = "images/accessories.gif" alt = "accessories-promotion">
+          </a>
+        </div>
+
+        <div class="kids-wear">
+          <a href = "kids-collection.html">
+            <img onmouseover="stopScroll()" onmouseleave="startScroll()"  src = "images/kids-wear.gif" alt = "kids-wear-promotion">
+
+          </a>
+        </div>
+      </div>
+      <h1 id = "collections-page"> OUR COLLECTION </h1>
+      <div class="collections">
+        <div class="mens-collection" onclick="goToMensCasual()">
+          <img class="collection-image" src = "images/mens-collection.jpg">
+          <div  class="collection-name">
+            <p> Mens Casuals</p>
+          </div>
+        </div>
+        <div class="mens-formal-collection" onclick = "goToMensFormal()">
+          <img class="collection-image" src = "images/mens-formal-collection.jpg">
+          <div  class="collection-name">
+            <p> Mens Formals</p>
+          </div>
+        </div>
+        <div class="ladies-collection" onclick = "goToLadiesCollection();">
+          <img class="collection-image" src = "images/womens-collection.jpg">
+          <div  class="collection-name">
+            <p> Ladies Collection</p>
+          </div>
+        </div>
+        <div class="kids-collection" onclick = "goToKidsCollection();">
+          <img class="collection-image" src = "images//kids-wear-collection.jpg">
+          <div  class="collection-name">
+            <p> Kids Collection</p>
+          </div>
+        </div>
+        <div class="accessories-collection" onclick = "goToAccessoriesCollection();">
+          <img class="collection-image" src = "images/accessories-collection.jpg">
+          <div  class="collection-name">
+            <p> Accessories </p>
+          </div>
+        </div>
+        <div class="foot-wear-collection" onclick = "goToFootWearCollection();">
+          <img class="collection-image" src = "images/foot-wear-collection.jpg">
+          <div  class="collection-name">
+            <p> Foot wear </p>
+          </div>
+        </div>
+      </div>
+
+      <section class="about-section" id = 'about-page'>
+        <h2>About Urban Canvas</h2>
+        <p>
+          Urban Canvas is a leading fashion brand dedicated to providing the latest trends and styles for fashion enthusiasts around the globe.
+        </p>
+        <p>
+          At Urban Canvas, we believe that fashion is a form of self-expression, and our mission is to empower individuals to showcase their unique personality through clothing and accessories.
+        </p>
+        <p>
+          <strong>Our Commitment:</strong> We are committed to delivering high-quality products that blend comfort, style, and affordability. Our collections are curated to cater to diverse tastes, ranging from casual wear to formal attire.
+        </p>
+        <p>
+          <strong>Explore Our Collections:</strong> Whether you're looking for the perfect outfit for a special occasion, everyday wear, or trendy accessories to complete your look, Urban Canvas has you covered.
+        </p>
+        <p>
+          <strong>Customer Satisfaction:</strong> Your satisfaction is our top priority. We strive to provide an exceptional shopping experience with excellent customer service and hassle-free returns.
+        </p>
+      </section>
+    </main>
+    <footer id="contact-page">
+      <section class="contact-section">
+        
+        <div class="all-footer">
+          <div class="phone-email">
+            <p> Call: +91 7386086639</p>
+            <div class="maps-icon">
+              <a href = "https://www.google.com/maps/place/VPR+Convention+Centre/@14.3868989,79.9752205,15z/data=!4m6!3m5!1s0x3a4cf3afc59ce0b1:0xd9302344cf956f59!8m2!3d14.3877938!4d79.9732563!16s%2Fg%2F1q62fb8f_?entry=ttu">          <img src = "images/icons/icons8-place-marker-48.png">
+              </a>
+              <p> Near VPR Convention Center, Nellore</p>
+            </div>
+            <p> Support : jagadeeshraja055@gmail.com</p>
+          </div>
+
+          <div class="customer-care">
+            <ul> <p>Customer Care</p>
+              <li>Contact us</li>
+              <li>Returns & Exchanges</li>
+              <li>Terms of Service</li>
+              <li>Privacy Policy</li>
+            </ul>
+          </div>
+  
+          <div class="inside-urban-canvas">
+            <ul> <p>Inside Urban Canvas</p>
+              <li>About Us</li>
+              <li>Why Urban Canvas</li>
+            </ul>
+          </div>
+  
+          <div class="top-searches">
+            <ul> <p>Top Searches</p>
+              <li>Black</li>
+              <li>Sneakers</li>
+              <li>Watches</li>
+              <li>Shipping</li>
+            </ul>
+          </div>
+  
+          <div class="social-media">
+            <ul> <p> Social Media </p>
+            <li>
+              <div class="social-media-data">
+               <a href = "https://www.instagram.com/jagadeesh_raja_/">
+                <img src = "images/icons/icons8-instagram-48.png">
+               </a>
+              </div>
+            </li>
+            <li>
+              <div class="social-media-data">
+                <a href ="https://github.com/Jagadeesh-Udatha?tab=repositories">
+                  <img src = "images/icons/icons8-github-64.png">
+                </a>
+              </div>
+            </li>
+            <li>
+              <div class="social-media-data">
+                <a href  = "https://www.linkedin.com/in/jagadeesh-udatha-109935244/">
+                  <img src = "images/icons/icons8-linkedin-48.png">
+                </a>
+              </div>
+            </li>
+          </ul>  
+          </div>
+        </div>
+
+        <div class="end-footer">
+          <div class="rights">
+            <p>@2024, URBAN CANVAS, Inc <span> All Rights Reserved.</span></p>
+          </div>
+          <div class="get-latest-info">
+            <label for="text" > Get Latest Updates </label>
+            <div clas="all-latest">
+              <input type = 'text' id = "text" placeholder="Type Your Email Here">
+              <button class="all-latest-button">
+                SUBSCRIBE
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </footer>
+  </div>
+
+    <script src = "casuals.js"></script>
+    <script src  = "search-items.js"></script>
+    <script src = "formals.js"></script>
+    <script src = "kids-collections.js"></script>
+    <script src = "ladies-collection.js"></script>
+    <script src = "shoe-collection.js"></script>
+    <script src = "accessories-collection.js"></script>
+    <script src = "index.js">
+
+   </script>
+</body>
+</html>

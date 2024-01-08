@@ -1,0 +1,41 @@
+.all-results {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap:10px;
+  flex-wrap: wrap;
+  margin-bottom: 300px;
+  margin-top:-70px;
+}
+
+.results-data {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  line-height: 0.5;
+}
+
+.results-data button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out, transform 0.2s;
+}
+
+.results-data button {
+  background: linear-gradient(135deg, #f6d365, #fda085);
+  color: #fff;
+  border: none;
+}
+
+
+/* Hover and Active Effects */
+.results-data button:hover {
+  transform: scale(1.05);
+}
+
+.results-data button:active{
+  transform: scale(0.95);
+}

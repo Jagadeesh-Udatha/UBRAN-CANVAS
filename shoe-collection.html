@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+  <title>Mens Casuals</title>
+  <link rel = "stylesheet" href = "header.css">
+  <link rel = "stylesheet" href = "mens-casuals.css">
+  <link rel="stylesheet" href = "footer.css">
+  <link rel = "stylesheet" href = "media-screen.css">
+
+</head>
+<body>
+  <div  class="header-div" id = "header-div-id">
+    <header>
+      <nav class="main-header">
+        <div class="outer-left-header">
+          <div class="left-header">
+            <a href = "index.html">
+              <img class="main-logo" src = "images/UrbanCanvasLogo.png" alt = "Fashion-Logo">
+            </a>
+            <p class="logo-name">
+              URBAN CANVAS
+            </p>
+          </div>
+          <div class="mobile-menu">
+            <div class="add-to-cart">
+              <div class="cart-value-div">
+                <p class="cart-value"> 0 </p>
+              </div>
+              <a href = "cart.html"><img class="add-to-cart-img" src="images/AddToCart.png" alt = "Cart"></a>
+  
+            </div>
+          </div>
+        </div>
+        
+        <div class="results-bar">
+            <input type = "text" placeholder="Search For Products & more" class="search-input">
+            <img onclick = "searchItems();" src = "images/icons/icons8-search-64.png">
+          
+        </div>
+        <div class="right-header">
+          <li onclick = "goToHomePage();">HOME</li>
+          <li onclick = "redirectToCollections()">COLLECTIONS</li>
+          <li onclick = "scrollToSection('contact-page');">CONTACT</li>
+          
+          <div class="add-to-cart" >
+            <div class="cart-value-div">
+              <p class="cart-value"> 0 </p>
+            </div>
+            <a href = "cart.html"><img class="add-to-cart-img" src="images/AddToCart.png" alt = "Cart"></a>
+
+          </div>
+        </div>
+  
+      </nav>
+    </header>
+  </div>
+  <div class="all-outfits-mens-casual" id="all-men-casual">
+   
+  </div>
+  <footer id="contact-page">
+    <section class="contact-section">
+      
+      <div class="all-footer">
+        <div class="phone-email">
+          <p> Call: +91 7386086639</p>
+          <div class="maps-icon">
+            <a href = "https://www.google.com/maps/place/VPR+Convention+Centre/@14.3868989,79.9752205,15z/data=!4m6!3m5!1s0x3a4cf3afc59ce0b1:0xd9302344cf956f59!8m2!3d14.3877938!4d79.9732563!16s%2Fg%2F1q62fb8f_?entry=ttu">          <img src = "images/icons/icons8-place-marker-48.png">
+            </a>
+            <p> Near VPR Convention Center, Nellore</p>
+          </div>
+          <p> Support : jagadeeshraja055@gmail.com</p>
+        </div>
+
+        <div class="customer-care">
+          <ul> <p>Customer Care</p>
+            <li>Contact us</li>
+            <li>Returns & Exchanges</li>
+            <li>Terms of Service</li>
+            <li>Privacy Policy</li>
+          </ul>
+        </div>
+
+        <div class="inside-urban-canvas">
+          <ul> <p>Inside Urban Canvas</p>
+            <li>About Us</li>
+            <li>Why Urban Canvas</li>
+          </ul>
+        </div>
+
+        <div class="top-searches">
+          <ul> <p>Top Searches</p>
+            <li>Black</li>
+            <li>Sneakers</li>
+            <li>Watches</li>
+            <li>Shipping</li>
+          </ul>
+        </div>
+
+        <div class="social-media">
+          <ul> <p> Social Media </p>
+          <li>
+            <div class="social-media-data">
+             <a href = "https://www.instagram.com/jagadeesh_raja_/">
+              <img src = "images/icons/icons8-instagram-48.png">
+             </a>
+            </div>
+          </li>
+          <li>
+            <div class="social-media-data">
+              <a href ="https://github.com/Jagadeesh-Udatha?tab=repositories">
+                <img src = "images/icons/icons8-github-64.png">
+              </a>
+            </div>
+          </li>
+          <li>
+            <div class="social-media-data">
+              <a href  = "https://www.linkedin.com/in/jagadeesh-udatha-109935244/">
+                <img src = "images/icons/icons8-linkedin-48.png">
+              </a>
+            </div>
+          </li>
+        </ul>  
+        </div>
+      </div>
+
+      <div class="end-footer">
+        <div class="rights">
+          <p>@2024, URBAN CANVAS, Inc <span> All Rights Reserved.</span></p>
+        </div>
+        <div class="get-latest-info">
+          <label for="text" > Get Latest Updates </label>
+          <div clas="all-latest">
+            <input type = 'text' id = "text" placeholder="Type Your Email Here">
+            <button class="all-latest-button">
+              SUBSCRIBE
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </footer>
+  <script src  = "search-items.js"></script>
+
+  <script src = "shoe-collection.js"></script>
+</body>
+</html>

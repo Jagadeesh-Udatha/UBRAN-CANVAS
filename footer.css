@@ -1,0 +1,100 @@
+footer {
+  background-color: #292b2c;
+  color: #fff;
+  padding: 40px 0;
+}
+
+.phone-email {
+  display: flex;
+  flex-direction: column;
+
+}
+.maps-icon {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.all-footer{
+  display: flex;
+  justify-content: center;
+  gap:100px;
+  flex-wrap: wrap;
+}
+
+li {
+  line-height: 2;
+  cursor: pointer;
+}
+
+.all-footer ul{
+  list-style: none;
+}
+
+.social-media-data {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-media-data  img {
+  height: 50px;
+  transition: all 0.5s ease-in-out;
+  
+}
+
+.social-media-data img:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+ul p {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.end-footer {
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+
+}
+
+.get-latest-info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+label {
+  font-size: 20px;
+}
+
+input {
+  padding: 5px;
+  width: 300px;
+  border-radius: 20px;
+
+}
+
+input::placeholder {
+  font-size : 15px;
+}
+
+.all-latest-button{
+  padding: 5px 10px;
+  border-radius: 20px;
+  background-color: rgb(117, 154, 117);
+  border: none;
+  cursor: pointer;
+}
+
+.all-latest-button:hover {
+  background-color: rgba(0, 199, 0, 0.775);
+}
+
+.all-latest-button:active {
+  transform: scale(0.8);
+}
